@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to Hotel System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .content {
+            padding: 20px;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 12px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Welcome to Hotel System!</h1>
+        </div>
+        <div class="content">
+            <p>Dear <span th:text="${name}">User</span>,</p>
+            <p>Welcome to our Hotel System! We're excited to have you on board.</p>
+            <p>Your account has been successfully created with the role: <strong th:text="${role}">Role</strong></p>
+            <p>You can now:</p>
+            <ul>
+                <li>Browse available rooms</li>
+                <li>Make bookings</li>
+                <li>Manage your reservations</li>
+                <li>Receive notifications about your bookings</li>
+            </ul>
+            <p>If you have any questions or need assistance, please don't hesitate to contact our support team.</p>
+            <p>Best regards,<br>The Hotel System Team</p>
+        </div>
+        <div class="footer">
+            <p>This is an automated message, please do not reply to this email.</p>
+        </div>
+    </div>
+</body>
+</html> 
